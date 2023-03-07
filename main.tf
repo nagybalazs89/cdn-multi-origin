@@ -1,33 +1,3 @@
-# module "blob" {
-#   source                  = "./modules/blob"
-#   prefix                  = "sol"
-#   resource_group_name     = "blob-resources"
-#   resource_group_location = "West Europe"
-#   storage_accounts = {
-#     primary = {
-#       tier                = "Standard"
-#       replication         = "LRS"
-#       container           = "default"
-#     }
-#     secondary = {
-#       tier                = "Standard"
-#       replication         = "LRS"
-#       container           = "default"
-#     }
-#     tertiary = {
-#       tier                = "Standard"
-#       replication         = "LRS"
-#       container           = "default"
-#     }
-#   }
-# }
-
-# origin group 1
-# origin 1
-# origin 2
-# origin group 2
-# origin 3
-
 variable "default_origin" {
   description = ""
   type = object({
