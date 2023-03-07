@@ -4,7 +4,7 @@
 
 Terraform Azure Provider ([azurerm](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)) does not support Multi-Origin CDN configuration out of the box.
 
-This repo contains code which accomplish the same behaviour with the combination of ```azurerm``` and the [AzAPI](https://registry.terraform.io/providers/Azure/azapi/latest/docs) provider.
+This repo contains code which accomplishes the same behaviour with the combination of ```azurerm``` and the [AzAPI](https://registry.terraform.io/providers/Azure/azapi/latest/docs) provider.
 
 ## The following will be created
 * resource group
