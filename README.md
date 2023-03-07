@@ -10,7 +10,7 @@ This repo contains code which accomplishes the same behaviour with the combinati
 * resource group
 * profile
 * endpoint
-* give number of origins grouped into congiured origin groups
+* given number of origins grouped into congiured origin groups
 
 ## .tfvars example
 
