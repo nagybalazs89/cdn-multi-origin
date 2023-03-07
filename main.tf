@@ -125,16 +125,6 @@ data "azapi_resource_action" "all_origins" {
   ]
 }
 
-# data "azapi_resource" "all_origins" {
-#   for_each  = var.origins
-#   name      = each.key
-#   parent_id = azurerm_cdn_endpoint.this.id
-#   type      = "Microsoft.Cdn/profiles/endpoints/origins@2022-11-01-preview"
-
-#   response_export_values = ["id", "name"]
-#   depends_on = [azapi_resource_action.origins]
-# }
-
 resource "azapi_resource_action" "non_def_groups" {
   for_each = var.origin_groups
   type = "Microsoft.Cdn/profiles/endpoints/originGroups@2022-11-01-preview"
@@ -149,7 +139,3 @@ resource "azapi_resource_action" "non_def_groups" {
     data.azapi_resource_action.all_origins
   ]
 }
-
-# output "hosts" {
-#     value = [for instance in data.azapi_resource.all_origins : instance.id]
-# }
